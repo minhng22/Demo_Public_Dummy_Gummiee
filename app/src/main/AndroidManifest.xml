@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="game.minh.administrator.dummy" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+
+        <!-- access fb app ID -->
+        <!--<meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <provider android:authorities="com.facebook.app.FacebookContentProvider147686675590023"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|keyboardHidden"/>-->
+
+        <activity
+            android:name="game.minh.administrator.dummy.logInWithFB"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name= "com.google.android.gms.ads.AdActivity"
+            />
+
+        <activity
+            android:name="game.minh.administrator.dummy.GameMain"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+
+        <activity
+            android:name="game.minh.administrator.dummy.reSultBoard"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+
+        <activity
+            android:name="game.minh.administrator.dummy.picturePicking"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+
+        <activity android:name="game.minh.administrator.dummy.CropImage"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+
+        <provider
+            android:name="game.minh.administrator.dummy.InternalStorageContentProvider"
+            android:authorities="eu.janmuller.android.simplecropimage.example"
+            android:exported="true" />
+    </application>
+
+</manifest>

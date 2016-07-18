@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Dummy Gummie</string>
+    <string name="pick_app">Pick Crop App</string>
+    <string name="Cropped_Photo">Cropped_Photo_Link</string>
+    <string name="title_activity_re_sult_board">reSultBoard</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7741486623198531/7663023809</string>
+    <string name="device_unit_id">7A849DF582D7DEE96B2E578DE4159089</string>
+    <string name ="facebook_app_id">147686675590023</string>
+    <string name="User_ID">User ID</string>
+    <string name="saving_image">Saving image</string>
+    <string name="Score">Score</string>
+    <string name="HighScore">HighScore</string>
+    <string name="NewHighScore">NewHighScore</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="screenW">SCREEN W</string>
+    <string name="screenH">SCREEN H</string>
+    <string name ="sound">SOUND</string>
+</resources>

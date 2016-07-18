@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/resultPage_hs"
+        android:background="@drawable/high_score"
+        android:layout_above="@+id/score"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight ="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:id="@+id/score_hs"
+        android:textColor="@android:color/black"
+        android:textSize="19pt"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/high_score_board_hs"
+        android:background="@drawable/h_s_board_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight ="true"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/newGame_hs"
+        android:background="@drawable/new_game_button"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/exitButton"
+        android:layout_toRightOf="@+id/exitButton"
+        android:layout_gravity="left|bottom" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/play_again_hs"
+        android:background="@drawable/play_again_button"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal|bottom" />
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/exitButton_hs"
+        android:background="@drawable/quit_button"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/play_again"
+        android:layout_toRightOf="@+id/play_again"
+        android:layout_gravity="right|bottom"
+        />
+
+</FrameLayout>
+
